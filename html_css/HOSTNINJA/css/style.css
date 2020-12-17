@@ -1,5 +1,4 @@
-/* import favorite font from google fonts */
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 :root {
     --primary-color:  #047aed
 }
@@ -107,6 +106,11 @@ img {
     width: 100%;
     padding: 0.2rem;
     font-size: 1rem;
+    font-family: inherit;
+}
+
+.showcase-form input[type='submit'] {
+    font-family: inherit;
 }
 
 .showcase-form input:focus{
