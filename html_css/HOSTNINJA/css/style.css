@@ -1,0 +1,148 @@
+/* import favorite font from google fonts */
+
+:root {
+    --primary-color:  #047aed
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato',Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    background-color:var(--primary-color);
+    color: #fff;
+    height: 4.5rem;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px #fff solid;
+}
+.navbar .flex {
+    justify-content: space-between;
+}
+
+/* Showcase */
+.showcase {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+
+}
+
+.showcase h1 {
+    font-size: 2.5rem;
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+
+.showcase .grid {
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 2rem;
+}
+
+.showcase-form {
+    position: relative;
+    top: 3.7rem;
+    height: 22rem;
+    width: 25rem;
+    padding: 2.5rem;
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+    margin: 2rem 0;
+
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+    border: 0;
+    border-bottom: 0.1rem solid #b4becb;
+    width: 100%;
+    padding: 0.2rem;
+    font-size: 1rem;
+}
+
+.showcase-form input:focus{
+    outline: none;
+}
+
+.showcase::before,
+.showcase::after {
+    content: ''; /* this is a compulsory property for this to work */
+    position: absolute;
+    height: 6.25rem;
+    bottom: -4.5rem;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+/* Stats */
+.stats {
+    padding-top: 6.25rem;
+}
+
+.stats-heading {
+    max-width: 32rem;
+    margin: auto;
+}
+
+.stats .grid h3 {
+    font-size: 2rem;
+}
+
+.stats .grid p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
