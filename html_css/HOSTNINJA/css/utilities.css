@@ -1,6 +1,6 @@
 /* Utilities */
 .container {
-    max-width: 1100px;
+    max-width: 75rem;
     margin: 0 auto;
     overflow: auto;
     padding: 0 2.5rem;
@@ -34,8 +34,84 @@
     transform: scale(.9);
 }
 
+/* Backgrounds & colored buttons */
+.bg-primary,
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.bg-light,
+.btn-light {
+    background-color:    var(--light-color);
+    color: #333;
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a
+{
+    color: #fff;
+}
+
+.kead {
+    font-size: 1.25rem;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+
 .text-center {
     text-align: center;
+}
+
+alert {
+    background-color: #f4f4f4;
+    padding: 0.6rem 1.25rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.alert i {
+    margin-right: .6rem;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: #fff;
+}
+
+.alert-error {
+    background-color: var(--error-color);
+    color: #fff;
 }
 
 .flex {
