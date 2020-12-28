@@ -53,8 +53,7 @@
   color: #fff;
 }
 
-.bg-pegpay,
-.btn-pegpay {
+.bg-pegpay {
   background-color: var(--pegasus-color);
   color: #fff;
 }
@@ -126,6 +125,32 @@ alert {
   height: 100%;
 }
 
+.pegpay-flex {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pegpay-flex ul {
+  display: flex;
+  
+}
+
+.pegpay-flex li {
+  display: flex;
+  padding: .5rem 1rem;
+}
+
+.pegpay-flex li a ,.user a{
+  color: #fff;
+  padding: .5rem 0;
+}
+
+/* .pegpay-showcase {
+  padding: 5rem 0;
+} */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -180,7 +205,7 @@ alert {
   margin: 4rem;
 }
 
-/* Padding */
+/* Padding top-bottom*/
 .py-1 {
   padding: 1rem 0;
 }
@@ -201,6 +226,28 @@ alert {
   padding: 4rem 0\;;
 }
 
+/* Padding left-right*/
+.px-1 {
+  padding:  0 1rem;
+}
+
+.px-2 {
+  padding:  0 1.5rem;
+}
+
+.px-3 {
+  padding:  0 2rem;
+}
+
+.px-4 {
+  padding:  0 3rem;
+}
+
+.px-5 {
+  padding:  0 4rem;
+}
+
+/* Padding all-round*/
 .p-1 {
   padding: 1rem;
 }

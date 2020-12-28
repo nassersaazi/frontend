@@ -18,10 +18,16 @@ body {
   font-family: "Lato", sans-serif, Helvetica, Arial;
   color: #333;
   line-height: 1.5;
+  
+  
 }
 
 .pegpay-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #e5e5e5;
+  min-height: 100vh;
   /* opacity: 10%; */
 }
 
@@ -56,15 +62,6 @@ img {
   height: 4.5rem;
 }
 
-.pegpay-nav {
-  background-color: var(--pegasus-color);
-}
-
-.pegpay-body nav {
-  display: flex;
-  justify-content: space-between;
-}
-
 .navbar ul {
   display: flex;
 }
@@ -75,7 +72,7 @@ img {
   margin: 0 5px;
 }
 
-.navbar a:hover {
+.navbar a:hover,nav a:hover {
   border-bottom: 2px #fff solid;
 }
 .navbar .flex {
@@ -90,9 +87,6 @@ img {
   position: relative;
 }
 
-.pegpay-showcase {
-  padding: 5rem 0;
-}
 
 .showcase h1 {
   font-size: 2.5rem;
@@ -251,6 +245,16 @@ img {
 
 .docs-main a:hover {
   font-weight: bold;
+}
+
+/* Pegpay showcase */
+.pegpay-showcase .flex{
+  justify-content: space-around;
+}
+
+.pegpay-guidelines {
+  outline: .5rem solid var(--pegasus-color);
+  padding: 8rem 2rem;
 }
 
 /* Footer */
