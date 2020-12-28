@@ -72,9 +72,14 @@ img {
   margin: 0 5px;
 }
 
-.navbar a:hover,nav a:hover {
+.navbar a:hover {
   border-bottom: 2px #fff solid;
 }
+
+nav a:hover {
+  color: #adadad;
+}
+
 .navbar .flex {
   justify-content: space-between;
 }
@@ -249,17 +254,45 @@ img {
 
 /* Pegpay showcase */
 .pegpay-showcase .flex{
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.pegpay-showcase .card > *:first-child {
+  padding-top: 2rem;
+}
+
+.pegpay-showcase .card > *:last-child {
+  padding-bottom: 2rem;
 }
 
 .pegpay-guidelines {
   outline: .5rem solid var(--pegasus-color);
   padding: 8rem 2rem;
+  max-width: 35%;
 }
 
 /* Footer */
 .footer .social a {
   margin: 0 0.6rem;
+}
+
+ .footer .flex > *:first-child,.footer .flex > *:nth-child(2) {
+  max-width: 30%;
+} 
+
+.footer .flex {
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.footer .flex > *:last-child {
+  align-self: flex-start;
+}
+
+.footer .flex > *:last-child h1 {
+  background-color: #fff;
+  color: #333;
+  border-radius: 100%;
 }
 
 @media (max-width: 48rem) {
