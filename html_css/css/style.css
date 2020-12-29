@@ -22,15 +22,6 @@ body {
   
 }
 
-.pegpay-body{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #e5e5e5;
-  min-height: 100vh;
-  /* opacity: 10%; */
-}
-
 ul {
   list-style-type: none;
 }
@@ -82,6 +73,20 @@ nav a:hover {
 
 .navbar .flex {
   justify-content: space-between;
+}
+
+
+.user-details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 2rem;
+  width: 10rem;
+} 
+
+.user-details a {
+  margin: 0 1em;
+  font-weight: bold;
 }
 
 /* Showcase */
@@ -252,32 +257,13 @@ nav a:hover {
   font-weight: bold;
 }
 
-/* Pegpay showcase */
-.pegpay-showcase .flex{
-  justify-content: space-between;
-}
-
-.pegpay-showcase .card > *:first-child {
-  padding-top: 2rem;
-}
-
-.pegpay-showcase .card > *:last-child {
-  padding-bottom: 2rem;
-}
-
-.pegpay-guidelines {
-  outline: .5rem solid var(--pegasus-color);
-  padding: 8rem 2rem;
-  max-width: 35%;
-}
-
 /* Footer */
 .footer .social a {
   margin: 0 0.6rem;
 }
 
  .footer .flex > *:first-child,.footer .flex > *:nth-child(2) {
-  max-width: 30%;
+  max-width: 70%;
 } 
 
 .footer .flex {
@@ -285,14 +271,21 @@ nav a:hover {
   padding-top: 1rem;
 }
 
+
 .footer .flex > *:last-child {
-  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+   min-width: 20em;
 }
 
-.footer .flex > *:last-child h1 {
-  background-color: #fff;
-  color: #333;
+.footer .flex > *:last-child .notification {
+  background-color: var(--pegasus-color);
+  color: #fff;
   border-radius: 100%;
+  font-weight: bold;
+  
 }
 
 @media (max-width: 48rem) {
@@ -328,6 +321,10 @@ nav a:hover {
     grid-row: 1;
     height: 30%;
   }
+
+  .user-details {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 31.25rem) {
@@ -335,12 +332,14 @@ nav a:hover {
     height: 7rem;
   }
 
-  .navbar .flex {
+  .navbar .flex, .pegpay-flex, .pegpay-flex ul {
     flex-direction: column;
   }
 
-  .navbar ul {
+  .navbar ul, .pegpay-flex ul {
     padding: 0.6rem;
     background-color: rgba(0, 0, 0, 0.1);
   }
+
+  
 }

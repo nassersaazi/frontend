@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/utilities.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pegpay.css">
     <title>SMS Portal | Send SMS</title>
 </head>
 <body class="pegpay-body">
-    <nav class="bg-pegpay">
+    <nav>
         <div class="container pegpay-flex">
         
             <div class="logo">
-                <img src="../images/logopeg.png" alt="pegasus_logo">
+                <img src="../images/peglogo.svg" alt="pegasus_logo">
             </div>
      
             <ul>
@@ -24,9 +25,9 @@
             
             </ul>
       
-            <div class="user">
+            <div class="user-details" >
                 <a href="#" >Tom</a>
-                <img src="../images/avatar-6.jpg" alt="user_pic">
+                <img src="../images/avatar-6.jpg" class="user" alt="user_pic">
             </div>
         
             </div>
@@ -53,40 +54,47 @@
                         <textarea name="" id="" cols="30" rows="10"></textarea> 
                     </div>
     
-                    <div class="flex">
+                    <div class="pegpay-flex">
+                        <div class="schedulesms">
                         <input type="radio" id="scheduled" name="schedulesms" value="scheduled">
                         <label for="scheduled">Schedule SMS</label>
                         
-                        <a href="#" class="btn bg-pegpay">SEND MESSAGE</a>
+                        </div>
+                        <a href="#" class="btn">SEND MESSAGE</a>
                     </div>
                     
                     
                 </form>
             </div>
-            <div class="pegpay-guidelines text-center"> 
+            <div class="pegpay-guidelines"> 
                 <h2>Sending SMS Guidelines</h2>
-                <p>Send an SMS to a contact that starts with either 256 or +256 or 07..</p>
+                <li>Send an SMS to a contact that starts with either 256 or +256 or 07..</p>
+                <li>Lorem ipsum dolor sit amet. 256 or +256 or 07..</p>
+                <li>Lorem ipsum dolor sit amet consectetur. or +256 or 07..</p>
+                <li>Send contact that starts with either 256 or +256 or 07..</p>
+                <li>Send an SMS  starts with either 256 or +256 or 07..</p>
+                <li>Send  starts with either 256 or +256 or 07..</p>
             </div>
             
         </div>
     </section>
-    <footer class="footer bg-pegpay">
+    <footer class="footer">
         <div class="container flex py-3">
             <div>
-                <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur animi veritatis expedita
-                soluta eaque corporis voluptatum dignissimos, vitae excepturi impedit.</p>
+                <h1>About</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur animi veritatis expedita
+                    soluta eaque corporis voluptatum dignissimos, vitae excepturi impedit.</p>
             
             </div>
             <div>
-                <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur animi veritatis expedita
-                soluta eaque corporis voluptatum dignissimos, vitae excepturi impedit.</p>
+                <h1>Contact</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur animi veritatis expedita
+                    soluta eaque corporis voluptatum dignissimos, vitae excepturi impedit.</p>
             
             </div>
             <div>
-                <h2>Number of SMS left</h2>
-                <h1 class="text-center p-3">44</h1>
+                <h1>Number of SMS left</h1>
+                <h1 class="notification text-center p-1">44</h1>
             </div>
         </div>
             

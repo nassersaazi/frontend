@@ -30,12 +30,16 @@
 .input-group input,.input-group textarea {
   outline: none;
   background: none;
-  border: .1rem solid var(--pegasus-color);
+  border: .1rem solid rgba(67, 128, 184, 0.3);
   font-size: 1em;
   padding: .5em;
   color: inherit;
   border-radius: 5px;
   max-height: 5em;
+}
+
+.input-group input:focus,.input-group textarea:focus{
+  border: .1rem solid var(--pegasus-color);
 }
 
 .btn {
@@ -77,7 +81,7 @@
 }
 
 .bg-pegpay {
-  background-color: var(--pegasus-color);
+  background-color: rgba(67, 128, 184, 0.1);
   color: #fff;
 }
 
@@ -148,54 +152,6 @@ alert {
   height: 100%;
 }
 
-.pegpay-flex {
-  padding: 1rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.pegpay-flex ul {
-  display: flex;
-  
-}
-
-.pegpay-flex .logo {
-  max-width: 20%;
-}
-
-.pegpay-flex .user {
-  display: flex;
-  justify-content: flex-start;
-  max-width: 10%;
-}
-
-.pegpay-flex .user img {
-  border-radius: 50%;
-}
-
-.pegpay-flex li {
-  display: flex;
-  padding: .5rem 1rem;
-}
-
-.pegpay-flex li a ,.user a{
-  color: #fff;
-  padding: .5rem 0;
-}
-
-.pegpay-showcase {
-  padding: 5rem 0;
-  
-}
-
-.pegpay-showcase form {
-  padding:0 6rem ;
-  
-}
-.pegpay-showcase .card {
-  background-color: #f7f5f5;
-}
 
 .grid {
   display: grid;
@@ -333,4 +289,11 @@ alert {
 
 .p-5 {
   padding: 4rem;
+}
+
+@media (max-width: 31.25rem)
+{
+  .flex{
+    flex-direction: column;
+  }
 }
