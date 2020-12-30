@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+  --pegasus-color: #4380B8;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif, Helvetica, Arial;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  background: url('../images/car.PNG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.flex-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-container {
+    
+    overflow: auto;
+    margin: 0 6rem;
+  }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70vh;
+    
+
+}
+
+.main-container .main-nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 0;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.main-nav .logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main-nav li {
+    margin-left: 1rem;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    font-size: 2rem;
+}
+
+.main-section h1 {
+    color: #04C2C2;
+    font-weight: bold;
+}
+
+.main-section * {
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #000;
+}
+footer .main-container{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+footer ul {
+    padding: 2rem 0;
+}
+
+/* Utlility classes */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.8rem;
+    cursor: pointer;
+    background: #04C2C2;
+    color: #fff;
+    border: none;
+  }
