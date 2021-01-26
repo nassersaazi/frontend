@@ -11,6 +11,29 @@
   background-color:  rgba(67, 128, 184, 0.1);
 }
 
+.pegpay-body .main {
+  color: #fff;
+  align-items: center;
+  background: url('../images/sms.PNG');
+  
+  background-size: cover; 
+  background-position: center; 
+  min-height: 64vh;
+  
+}
+
+.card .main {
+  background: url('../images/sms.PNG');
+  
+  background-size: cover; 
+  background-position: center; 
+}
+
+.sub-menu-1 {
+  display: none;
+  
+}
+
 
 /* Pegpay showcase */
 
@@ -63,6 +86,22 @@
   color: var(--pegasus-color);
 }
 
+.pegpay-flex ul li:hover .sub-menu-1 {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background-color: rgba(209, 233, 252,0.5);
+  
+}
+
+.pegpay-flex ul li:hover .sub-menu-1 ul {
+  display: flex;
+  flex-direction: column;
+  color: #333;
+  margin: .6rem;
+  
+}
+
 .pegpay-flex .logo {
   max-width: 20%;
 }
@@ -77,6 +116,10 @@
 .pegpay-flex li {
   display: flex;
   padding: .5rem 1rem;
+}
+
+.pegpay-flex  .active a{
+  color: var(--pegasus-color);
 }
 
 .pegpay-flex li a, .user-details a {

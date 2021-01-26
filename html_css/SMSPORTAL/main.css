@@ -1,0 +1,54 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#EDF3F8; 
+    min-height: 100vh;
+    
+  }
+
+  .logo {
+      padding-bottom: 1rem;
+  }
+  
+  .card {
+      padding: 0;
+      margin: 0;
+  }
+
+.main-section .card {
+    background-color: #EDF3F8; 
+    display: flex;
+}
+
+.card .main {
+  background: url('../images/sms.PNG');
+  width: 20vw;
+  border-radius: 0.6rem 0 0 0.6rem;
+  background-size: cover; 
+  background-position: 65% 10%;
+}
+
+form {
+    padding: 1.5rem 2.5rem;
+}
+
+form a {
+    font-weight: bold;
+}
+
+.py-1 a:hover {
+    
+    color: var(--pegasus-color);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    background-color: var(--pegasus-color);
+}
+.copyright {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
