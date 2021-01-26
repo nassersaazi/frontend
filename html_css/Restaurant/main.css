@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+  --pegasus-color: #4380B8;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif, Helvetica, Arial;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  background: url('../images/food.png');
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background-position: center center;
+}
+
+ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.logo {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #C1B1A1;
+}
+
+.logo i {
+    color: #D39003;
+}
+
+.logo p 
+{
+    color: #fff;
+}
+
+.main-container {
+    margin: 2rem 6rem;
+  }
+
+  .top-nav {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .main-nav ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0; 
+      background-color: #D39003;
+  }
+
+  .main-nav ul > *:first-child ,.main-section h2{
+    background-color: #fff;
+    color: #D39003;
+  }
+
+  .main-nav ul > *:last-child, .calltoaction {
+    background-color: #7E1E15;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .main-nav li {
+    
+    padding: 2rem;
+}
+
+  .calltoaction,.main-section h2 ,.main-section > *:last-child {
+    /* display: inline-block; */
+    padding: 0.6rem 1rem;
+    border: none;
+  } 
+  
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    padding: 8rem 0;
+}
+
+.main-section * {
+    margin: 0.6rem 0rem;
+}
+
+  .main-section > *:last-child {
+    background-color: #D39003;
+  }
