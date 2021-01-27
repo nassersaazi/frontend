@@ -79,7 +79,7 @@
 .pegpay-flex ul {
   font-weight: bold;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .pegpay-flex ul a:hover {
@@ -87,19 +87,31 @@
 }
 
 .pegpay-flex ul li:hover .sub-menu-1 {
+  top: 3.5rem;
   display: flex;
   position: absolute;
-  flex-direction: column;
+  /* flex-direction: column; */ 
+  line-height: 0;
+  font-weight: normal;
   background-color: rgba(209, 233, 252,0.5);
   
 }
 
+
+.pegpay-flex ul li:hover .sub-menu-1 a {
+  font-weight: normal;
+}
 .pegpay-flex ul li:hover .sub-menu-1 ul {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   color: #333;
-  margin: .6rem;
   
+}
+
+.pegpay-flex ul li:hover .sub-menu-1 li {
+  padding: auto;
+  margin: 0;
 }
 
 .pegpay-flex .logo {
@@ -116,6 +128,7 @@
 .pegpay-flex li {
   display: flex;
   padding: .5rem 1rem;
+  margin: 0 1.5rem;
 }
 
 .pegpay-flex  .active a{
@@ -128,7 +141,7 @@
 }
 
 .pegpay-showcase {
-  margin: 5rem 0;
+  margin: 1rem 0;
   
 }
 
