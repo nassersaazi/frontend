@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    
+    <title>SMS PORTAL</title>
     <link rel="stylesheet" href="../css/utilities.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/pegpay.css">
-    
+    <link rel="stylesheet" href="main.css"> 
 </head>
 <body class="pegpay-body">
     <nav>
@@ -67,32 +66,41 @@
         
             </div>
     </nav>
-    <section class="main flex">
-        <div >
-            <h1 class="text-center">Send SMS with ease speed and convinience</h1>
-        </div>
-        
+    <section class="main-section">
+       
+            <div class="card">
+                
+                <form action="">
+                    <div class="logo">
+                        <img src="../images/peglogo.svg" alt="pegasus_logo">
+                    </div>
+                    <div class="input-group ">
+                        <label for="">Group Name</label>
+                        <input type="text" name="text"  required> 
+                    </div>
+                    <div class="input-group ">
+                        <label for="">Recipient Type</label>
+                        <input type="text" name="text"  required> 
+                    </div>
+    
+                    <div class="input-group">
+                        <label for="">Enter Phone Number</label>
+                        <input type="text" name="text"  required> 
+                    </div>
+                    <div class="input-group">
+                        <label for="">Enter Name</label>
+                        <input type="text" name="text"  required> 
+                    </div>
+                    
+                    <a href="home_system_user_view.html" class="btn">UPLOAD NUMBER</a>
+                    
+                </form>
+            
+            </div>
+            <div class="copyright py-2">
+                <p>&copy; 2021 | PEGASUS TECHNOLOGIES. All rights reserved.</p>
+            </div>
+            
     </section>
-    <footer class="footer">
-        <div class="container flex py-3">
-            <div>
-                <h1>About</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur animi veritatis expedita
-                    soluta eaque corporis voluptatum dignissimos, vitae excepturi impedit.</p>
-            
-            </div>
-            <div>
-                <h1>Contact</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur animi veritatis expedita
-                    soluta eaque corporis voluptatum dignissimos, vitae excepturi impedit.</p>
-            
-            </div>
-            <div>
-                <h1>Number of SMS left</h1>
-                <h1 class="notification text-center p-1">44</h1>
-            </div>
-        </div>
-            
-    </footer>
 </body>
 </html>
