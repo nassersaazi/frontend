@@ -276,6 +276,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  align-items: center;
   justify-content: space-between;
    min-width: 20em;
 }
@@ -283,8 +284,13 @@ nav a:hover {
 .footer .flex > *:last-child .notification {
   background-color: var(--pegasus-color);
   color: #fff;
-  border-radius: 100%;
-  font-weight: bold;
+  border-radius: 50%;
+  font-weight:  bold;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
 }
 
