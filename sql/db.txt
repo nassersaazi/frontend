@@ -1,0 +1,48 @@
+// Get all in merchant not notified to bill payments
+select Top 300* from ReceivedTransactions where 
+Status = 'SUCCESS' and 
+SentToPegPay = 0 and MONTH(RecordDate) = 12 and DAY(RecordDate) in ('24','25')
+and YEAR(RecordDate) = '2020'
+order by RecordDate desc
+
+
+// Get total per day
+select DAY(RecordDate), count(RecordId) as TotalPerDay
+from SMSOutboxCompleted
+WHERE RecordDate >=dateadd(day,datediff(day,0,GetDate())- 10,0) and Sender = 'UMEME'
+GROUP BY DAY(RecordDate)
+
+
+// Get total per hour
+select DATEPART(hour,RecordDate) as HourInDay, count(RecordId) as TotalPerHour
+from SMSOutboxCompleted
+WHERE RecordDate >=dateadd(hour,datediff(hour,0,GetDate())- 3,0) and Mask = 'UMEME'
+GROUP BY DATEPART(hour,RecordDate)
+
+
+// Check fragmentation of a table
+SELECT S.name as 'Schema',
+T.name as 'Table',
+I.name as 'Index',
+DDIPS.avg_fragmentation_in_percent,
+DDIPS.page_count
+FROM sys.dm_db_index_physical_stats (DB_ID(), OBJECT_ID('BankAccounts'), NULL, NULL, NULL) AS DDIPS  -- <-- Place the table name here
+INNER JOIN sys.tables T on T.object_id = DDIPS.object_id
+INNER JOIN sys.schemas S on T.schema_id = S.schema_id
+INNER JOIN sys.indexes I ON I.object_id = DDIPS.object_id
+AND DDIPS.index_id = I.index_id
+WHERE DDIPS.database_id = DB_ID()
+and I.name is not null
+AND DDIPS.avg_fragmentation_in_percent > 0
+-- and T.name='GeneralLedgerTable' --To search for a particular table    --<< VERY SLOW!!
+ORDER BY DDIPS.avg_fragmentation_in_percent desc
+
+
+// Defragment a table index
+ALTER INDEX [NonClusteredIndex-CratedOn] ON BankAccounts
+REBUILD;
+
+//CHECK UNLINKED AGENTS WITH BALANCES
+select AccNumber,dbo.fn_GetAccountBalance('MTN',AccNumber) as Balance from BankAccounts 
+where AccType='LOAN_ACCOUNT' and AccountStatus='UNLINKED' and 
+dbo.fn_GetAccountBalance('MTN',AccNumber) >'0'
