@@ -46,3 +46,60 @@ REBUILD;
 select AccNumber,dbo.fn_GetAccountBalance('MTN',AccNumber) as Balance from BankAccounts 
 where AccType='LOAN_ACCOUNT' and AccountStatus='UNLINKED' and 
 dbo.fn_GetAccountBalance('MTN',AccNumber) >'0'
+
+// GET SMS PORTAL USERS
+select Username, 
+case 
+when UserRole = '003' then 'System User'
+when UserRole = '005' then 'User Approver'
+when UserRole = '002' then 'Vendor Administrator'
+when UserRole = '001' then 'System Administrator'
+when UserRole = '004' then 'Head Accounts'
+end as 'Role Description',UserRole,Vendor  
+from Users where Active = 1 
+ order by UserRole desc
+
+
+//DAAD SCHOLARSHIPS -- most links for winter sem to be activated in April
+--create email (nasserssessaazi@gmail.com) to be used strictly for daad applications
+ARTIFICIAL INTELLIGENCE
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7193/#tab_registration deadline March 14
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4350/#tab_registration
+(https://www2.informatik.uni-hamburg.de/Info/Studium/MSc/IAS/wiki/index.php/Application:Required_documents#4._Letter_of_Motivation) deadline March 30
+
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6937/#tab_registration deadline May 13
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5253/#tab_registration deadline May 13
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4317/#tab_registration deadline May 13
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7124/#tab_registration deadline April 13
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6978/#tab_registration deadline May 30
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4010/#tab_registration deadline May 15(https://www.wi.uni-muenster.de/prospective-students/our-courses-study/master-science-information-systems.....University of Munster)
+
+https://movein-uni-bielefeld.moveonnet.eu/movein/portal/studyportal.php
+https://www.studium.hs-mittweida.de/en/bewerbung/application-instructions-for-international-applicants/application-documents/
+
+DATA SCIENCE
+
+
+//REQUIREMENTS
+passport
+b2/toefl
+o level cert
+a level cert
+cv
+transcript
+photo
+10,236 euros
+
+15 courses(10 english, 5 german)--285 euros
+
+
+// GET DATA FOR LAST 60 MINUTES
+select top 10* from ReceivedTransactions WHERE RecordDate <=dateadd(MINUTE,datediff(MINUTE,0,GetDate())- 60,0) 
+order by RecordDate desc
+
+
+
+
+
+
+
