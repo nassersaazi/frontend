@@ -61,6 +61,7 @@ from Users where Active = 1
 
 
 //DAAD SCHOLARSHIPS -- most links for winter sem to be activated in April
+vef7t3mc
 --create email (nasserssessaazi@gmail.com) to be used strictly for daad applications
 ARTIFICIAL INTELLIGENCE
 https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7193/#tab_registration deadline March 14
@@ -85,18 +86,29 @@ https://www2.daad.de/deutschland/studienangebote/international-programmes/en/det
 https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5561/#tab_registration deadline May 13(priority)
 https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4713/#tab_registration deadline May 13
 https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6296/#tab_registration deadline May 13
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7066/#tab_registration deadline May 13
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7066/#tab_registration deadline March 31
 https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6916/#tab_registration deadline May 13
 https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5351/#tab_registration deadline May 13
 https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4556/#tab_registration deadline May 13
 
 COMPUTER SCIENCE
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5616/#tab_registration deadline May 13
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5245/#tab_registration deadline May 13
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3607/#tab_registration deadline March 31
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4700/#tab_registration deadline March 31
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5616/#tab_registration deadline March 31
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6148/#tab_registration deadline March 31
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5245/#tab_registration deadline March 31
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4001/#tab_registration deadline March 31
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5551/#tab_registration deadline March 31
 https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4591/#tab_registration deadline March 23(priority)--(University of Siegen)
 https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3629/#tab_registration deadline April 13
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5245/#tab_registration deadline May 13
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6236/#tab_registration deadline May 13
+
 FINANCE
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4287/#tab_registration deadline May 13
+https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4287/#tab_registration deadline March 31
+
+OTHER
+https://www.wi.uni-muenster.de/prospective-students/our-courses-study/master-science-information-systems deadline 
 
 //REQUIREMENTS
 passport
@@ -116,6 +128,289 @@ visit Goethe institute Saturday
 select top 10* from ReceivedTransactions WHERE RecordDate <=dateadd(MINUTE,datediff(MINUTE,0,GetDate())- 60,0) 
 order by RecordDate desc
 
+
+
+
+
+APTITUDE QUESTIONS
+
+Given a stack s with data [1,2,3,4] (1 is the element at the top) and a queue q with data [5,6,7,8] we execute the following commands:
+
+q.enqueue(s.pop());
+s.push(s.pop());
+s.pop();
+q.enqueue(q.dequeue());
+s.push(q.dequeue())
+What value would a call to s.pop() have now? 
+3
+
+What value would a  call to d.dequeue() have now? 
+4
+
+
+Which are core components of a von-Neumann architecture?
+
+	ALU, memory, disk
+	ALU, GPU, I / O unit
+	Register, ALU, memory
+	ALU, control unit, memory
+
+
+How does pipelining increase the performance of a CPU?
+
+	Executing multiple instructions in a single cycle
+	By using hyper-threading to simulate more cores
+	Adding ALUs for higher parallelism
+	Executing simple sub-tasks of an instruction
+
+
+What is the purpose of a primary key in a database table?
+
+	To merge tables
+	Improve the speed of indexing
+	Define relationships between table rows
+	To hibernate an object into a database
+
+
+What does normalization mean for a relational database?
+
+	Convert 1: m relationships to 1: 1
+	Reorganize data so that all tables have the same number of columns
+	Flattening the data model into a single table
+	Ensure that every table has a single primary key column
+	Organize data to avoid redundancy
+
+What are characteristics of black-box-Tests?
+
+	The point of control and the point of observation are outside of the test object.
+	The test is structure oriented.
+	Testcases are chosen based on the object’s specification.
+	Inisght into the source code is required.
+
+What are advantages to agile software development processes?
+
+	The team can simply start programming.
+	To define a process in which you can involve the customer.
+	Reduced planning effort for frequent changes.
+	Making it easy to cope with changes and vague requirements.
+
+Which of the following changes are refactorings?
+
+	Documentation: Comments within a class are added.
+	Bugfix: A Bug within a class was fixed by a developer, so that the program is now running correctly.
+	Update: A developer upgrades a used library to the newest version.
+	Imports: Unused imports get removed by the developer.
+	Complexity: A developer splits a method into two smaller ones to reduce the complexity of the program
+
+Which of the following are criteria for software quality?
+
+	Maintainability
+	Portability
+	Usability
+	Lines of Code (LOC)
+	Functionality
+	Efficiency
+
+Determine whether the following formulas are true. So note that N does not contain 0 in this case.
+
+∀ x ∈ N : ∃ y∈ Z : | x ∗ y| <10
+∃ x ∈ N : ∀ y∈ Z : | x ∗ y| >10
+∀ a ∈ N : ∃ b ∈ R :b2= a
+∀ a ∈ N : ∀ b ∈ N : ∀ c ∈ Z :a2+b2=c2
+	1. is true
+	2. is true
+	3. is true
+	4. is true
+
+What is the most fitting description of the runtimes?
+
+O ( n ⋅ l o g( n ) )
+O (n2)
+O ( n )
+O (n2⋅ l o g( n ) )
+O ( l o g( n ) )
+Insert the number of the best fitting formula eg insert 3 iff O ( n ) seams to describe the runtime best.
+
+What is the average runtime complexity of Quicksort? 
+
+What is the best-case runtime complexity of (standard) Bubblesort? 
+
+What is the worst-case runtime complexity of Binary-Tree lookup (in a perfectly balanced tree)? 
+
+What is the worst-case runtime complexity of search in a hash table? 
+
+
+Determine the zeros for the following functions:
+
+f( x ) = -x2+ 9
+smaller root: 
+larger root: 
+G( x ) = 7 x - 3
+as fraction: 
+
+
+Given the following finite automaton. Which of the following regular expressions describes the same language as the automaton?
+
+
+
+	(ab) + c + d *
+	(ab) + c * d +
+	a (ba) * bc + d? d +
+	a (ba) * bc * dd *
+	a + b + c * d +
+	[ab] + c * d +
+
+
+Do the following algorithms contain recursion and / or iteration?
+
+int algorithm1(int x) {
+    int accumulator = 0;
+    for(int i=0; i<x; i++)
+        accumulator += 2*i+1;
+    return accumulator;
+}
+int algorithm2(int x) {
+    return x-3;
+}
+int algorithm3(int x) {
+    if(x<=1)
+        return 2;
+    int accumulator = 0;
+    for(int i=0; i<x; i++)
+        axxumulator += algorithm3(i);
+    return accumulator;
+}
+	1 is iterative
+	1 is recursive
+	2 is iterative
+	2 is recursive
+	3 is iterative
+	3 is recursive
+
+Which of the following statements are correct (assuming O notation)?
+
+	Random access of elements in an array is O(1)
+	Deleting an element is slower for a linked list than for an array
+	Linked lists are more memory-efficient than arrays
+
+What is the binary result of 0110 XOR 1100?
+
+ 
+
+	1010
+	1110
+	1001
+	0110
+
+What is the definition of the eigenvalues λ of a matrix A.? (I. refers to the identity matrix.)
+
+	The roots of det (A + λI)
+	The roots of det (A − λI)
+	The roots of det (λA − I)
+	The roots of det (λA + I)
+
+Find the value of p for which, the rank of the given matrix is ​​1.
+
+3 p p
+p 3 p
+p p 3
+
+	3
+	2
+	4th
+	1
+
+Assume you are guessing when picking one of the four answers below. After you picked it, we reveal one wrong answer to you. If you then change your answer afterwards (again at random) to one of the two remaining ones, what is your overall chance of obtaining the correct answer?
+
+	1/4
+	1/3
+	1/2
+	3/8
+
+Given the sets S.1= { 2 , 3 , 5 , 8 , 9 } other S.2= { 3 , 4 , 5 , 6 , 7 } which of the following statements is correct?
+
+	Both sets have the same variance
+	S1 has larger variance than S2
+	For S2 the median value is equal to the mean value
+	Median value and mean value are 5 5 for both sets
+
+How many learnable parameters has a linear (or fully-connected) layer with 20 input neurons and 8 output neurons?
+
+	8th
+	160
+	20th
+	28
+
+When comparing TCP and UDP, which of the following statements are true?
+
+	TCP uses a checksum to prevent data corruption, while no checksum is present in UDP
+	UDP is commonly used for VoIP applications, while TCP is commonly used for web browsing
+	TCP is connection based protocol, while UDP is connectionless
+	UDP uses acknowledgements to increase the reliability of data transfer compared to TCP
+
+Which of the following tasks is not done by data link layer?
+
+	Error control
+	Framing
+	Channel coding
+	Flow control
+
+Packet switching vs. circuit switching. Which of the following answers are correct?
+
+	Circuit switching requires to set up a connection in all nodes between the communicating hosts before transmitting a data flow, while packet switching does not
+	Packet switching allows a data be splitted into smaller packets, each can be sent fast, thus is more efficient in terms of average bandwidth use than circuit switching
+	Circuit switching requires to set up a connection in the communicating hosts before transmitting a data flow, while packet switching does not
+	Circuit switching will transfer a data flow without interference from other flows, thus is more efficient in terms of average bandwidth use than packet switching
+
+
+Which output is generated by the following code?
+
+a = [ 0, 1, 2, 3, 4, 5, 6, 7]
+N = len(a)
+for i in range(N):
+    a[i] = a[(i+4) % N]
+print(a)
+	[4, 5, 6, 7, 8, 9, 10, 11]
+	[4, 5, 6, 7, 4, 5, 6, 7]
+	[0, 0, 0, 1, 1, 1, 1, 2]
+	[4, 5, 6, 7, 0, 1, 2, 3]
+
+
+
+Generally speaking, which of the following is a major concern for an operating system?
+
+	High-level programming language complier
+	Manage the computer
+	Manage the system resources
+	Design and apply the interface between user's program and computer hardware system
+
+Depth-first search (DFS) and breadth-first search (BFS) algorithms: Which statements are correct?
+
+	DFS cannot always guarantee that the solution will be found
+	BFS always finds optimal solution
+	Both algorithms always find optimal solutions
+	DFS algorithms conduct searches by exploring the graph one layer at a time
+
+
+
+Operating system abstractions
+Question 29 of 30
+Not answeredActions 
+Match the operating system abstractions in the first row to the hardware components in the second row: ...
+
+Thread                     CPU
+signal                     Memory
+Virtual address space      Disk
+File System                Interrupt
+
+
+Four jobs arrive at a batch processing system at the same time and the execution time of each job is 2 hours. They run on a single processor. The average time for the jobs to finish is …
+
+	8 hours
+	1 hour
+	5 hours
+	2.5 hours
+	4 hours
 
 
 
