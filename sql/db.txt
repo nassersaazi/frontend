@@ -79,36 +79,7 @@ https://www2.daad.de/deutschland/studienangebote/international-programmes/en/det
 https://movein-uni-bielefeld.moveonnet.eu/movein/portal/studyportal.php
 https://www.studium.hs-mittweida.de/en/bewerbung/application-instructions-for-international-applicants/application-documents/
 
-DATA SCIENCE
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4384/#tab_registration deadline May 13(priority)
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4850/#tab_registration deadline May 13(priority)
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4417/#tab_registration deadline April 13(priority)
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5561/#tab_registration deadline May 13(priority)
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4713/#tab_registration deadline May 13
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6296/#tab_registration deadline May 13
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/7066/#tab_registration deadline March 31
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6916/#tab_registration deadline May 13
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5351/#tab_registration deadline May 13
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4556/#tab_registration deadline May 13
-
-COMPUTER SCIENCE
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3607/#tab_registration deadline March 31
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4700/#tab_registration deadline March 31
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5616/#tab_registration deadline March 31
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6148/#tab_registration deadline March 31
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5245/#tab_registration deadline March 31
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4001/#tab_registration deadline March 31
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5551/#tab_registration deadline March 31
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4591/#tab_registration deadline March 23(priority)--(University of Siegen)
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/3629/#tab_registration deadline April 13
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/5245/#tab_registration deadline May 13
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/6236/#tab_registration deadline May 13
-
-FINANCE
-https://www2.daad.de/deutschland/studienangebote/international-programmes/en/detail/4287/#tab_registration deadline March 31
-
-OTHER
-https://www.wi.uni-muenster.de/prospective-students/our-courses-study/master-science-information-systems deadline 
+ 
 
 //REQUIREMENTS
 passport
